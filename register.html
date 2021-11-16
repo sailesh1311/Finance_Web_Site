@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.vl {
+  border-left: 3px solid black;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+.v2 {
+  margin-left: 251px;
+}
+.v3 {
+  margin-left: 57px;
+}
+.v4 {
+  height: 200px;
+  margin-left: 100px;
+}  
+.v5 {
+  margin-left: 86px;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+
+    <div class="grid-child purple">
+      <div class="v2">
+<div class="v3">
+<h2>Login</h2>
+</div>
+<form action="/action_page.php">
+  <label for="fname">Email:</label><br>
+  <input type="email" id="fname" name="fname"><br>
+  <br>
+  <label for="lname">Password:</label><br>
+  <input type="password" id="lname" name="lname"><br><br>
+  <div class="v3"><input type="submit" value="Submit"></div>
+</form>
+</div>
+    </div>
+<div class="vl"></div>
+    <div class="grid-child green">
+      <div class="v4">
+<h2>Don't have an account?</h2>
+<div class="v5"><h4> Register as </h4></div>
+<button type="button" style="margin-left: 60px;">Lender</button>
+<button type="button" style="margin-left:0px;">Borrower</button>
+  
+</div>
+
+    </div>
+  
+</div>
+</body>
+</html>
